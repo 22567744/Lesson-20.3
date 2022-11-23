@@ -1,0 +1,47 @@
+.rating_body{
+	position: relative;
+}
+
+.rating_body::before{
+	content: "&";
+	display: block;
+}
+
+.rating_active{
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	left:0;
+	overflow: hidden;
+	top: 0;
+}
+
+.rating_active:before{
+	content: "%";
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	left:0;
+	overflow: hidden;
+	top: 0;
+	color: #ffd330;
+}
+
+.rating_items{
+	display: grid;
+	position: absolute;
+	width:100%;
+	height: 100%;
+	left:0;
+	top:0;
+}
+
+.rating_item{
+	flex: 0 0 20%;
+	height: 100%;
+	opacity: 0;
+}
+
+.rating_value{
+	
+}
